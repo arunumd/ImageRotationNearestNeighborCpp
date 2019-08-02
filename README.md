@@ -21,3 +21,11 @@ cd build
 cmake .. && make
 ./ImageTransform <image> <rotation-angle>
 ```
+
+# Output
+
+** Original image **
+![alt text](https://raw.githubusercontent.com/username/projectname/branch/path/to/output/original.png)
+
+** Rotated image **
+![alt text](https://raw.githubusercontent.com/username/projectname/branch/path/to/output/rotated.png)
