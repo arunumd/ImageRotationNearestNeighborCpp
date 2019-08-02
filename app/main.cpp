@@ -78,13 +78,14 @@ void ImageTransform(const cv::Mat &src, const cv::Mat &trans_mat, cv::Mat &dest)
 */
 void Usage() {
 	std::cout << "COMMAND INPUT : - \n\n" <<
-	          "          ./ImageTransform <image> <rotation-angle>" <<
+	          "          ./ImageTransform <input file name> <output file name> <rotation-angle>" <<
 	          std::endl;
 }
 
 /*!
-* \brief main function to read a user input location for an image and then apply the
-*        required transformations (rotation / translation)
+* \brief main function to read a user input location for an image, then apply the
+*        required transformations (rotation / translation) and store the output
+*        file name to the memory
 */
 int main(int argc, char *argv[])
 {
