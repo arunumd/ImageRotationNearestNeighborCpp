@@ -25,7 +25,7 @@ cmake .. && make
 # Output
 
 ** Original image **
-![alt text](https://raw.githubusercontent.com/username/projectname/branch/path/to/output/original.png)
+![alt text](https://raw.githubusercontent.com/arunumd/ImageRotationNearestNeighborCpp/master/output/original.png)
 
 ** Rotated image **
-![alt text](https://raw.githubusercontent.com/username/projectname/branch/path/to/output/rotated.png)
+![alt text](https://raw.githubusercontent.com/arunumd/ImageRotationNearestNeighborCpp/master/output/rotated.png)
