@@ -21,7 +21,7 @@ cd ImageRotationNearestNeighborCpp
 mkdir build
 cd build
 cmake .. && make
-./ImageTransform <image> <rotation-angle>
+./ImageTransform <input file name> <output file name> <rotation-angle>
 ```
 
 # Output
