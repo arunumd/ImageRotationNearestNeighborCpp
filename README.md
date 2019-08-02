@@ -1,3 +1,5 @@
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 # Image rotation and translation in C++ using Nearest neighbor interpolation
 The project is related to Nearest neighbor interpolation technique for image rotation. We read the user input for rotation angle, and then create a transformation matrix. Later, we multiply the destination image coordinates with the inverse of this transformation matrix to get the corresponding source image coordinates. After some rounding off operation, we get the nearest coordinates. The project uses OpenCV only fo rmatrix manipulations and not for the nearest neighbor interpolation itself.
 
