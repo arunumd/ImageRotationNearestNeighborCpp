@@ -24,8 +24,6 @@ cmake .. && make
 
 # Output
 
-** Original image **
-![alt text](https://raw.githubusercontent.com/arunumd/ImageRotationNearestNeighborCpp/master/output/original.png)
-
-** Rotated image **
-![alt text](https://raw.githubusercontent.com/arunumd/ImageRotationNearestNeighborCpp/master/output/rotated.png)
+| Original image | Rotated image |
+| --- | --- |
+| ![alt text](https://raw.githubusercontent.com/arunumd/ImageRotationNearestNeighborCpp/master/output/original.png) | ![alt text](https://raw.githubusercontent.com/arunumd/ImageRotationNearestNeighborCpp/master/output/rotated.png) |
