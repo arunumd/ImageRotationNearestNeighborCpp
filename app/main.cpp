@@ -81,17 +81,25 @@ void Usage() {
 	          "          ./ImageTransform <image> <rotation-angle>" <<
 	          std::endl;
 }
+
 /*!
 * \brief main function to read a user input location for an image and then apply the
-         required transformations (rotation / translation)
+*        required transformations (rotation / translation)
 */
 int main(int argc, char *argv[])
 {
+	for (auto i = 0; i < argc; i++)
+		std::cout << argv[i] << std::endl;
 	auto start = std::chrono::steady_clock::now();
-	if (argc == 0 || argc < 3)
+	if (argc < 4)
 		Usage();
 	else {
-		double degree = std::stod(argv[2]);
+		double degree = 0;
+		if (argv[3] < 0) {
+			degree = static_cast<double>(std::atof(argv[3]));
+		}
+		else
+			degree = std::stod(argv[3]);
 		double angle = degree * CV_PI / 180.;
 		cv::Mat src_img = cv::imread(argv[1]);
 		std::pair<int, int> null_trans = std::make_pair(0, 0);
@@ -117,6 +125,7 @@ int main(int argc, char *argv[])
 		cv::Mat trans_mat2 = CreateTransMat(0, translation_final);
 		ImageTransform(interim_img, trans_mat2, dest_img);
 		cv::imshow("Final image", dest_img);
+		cv::imwrite(argv[2], dest_img);
 		cv::waitKey(0);
 	}
 	auto end = std::chrono::steady_clock::now();
